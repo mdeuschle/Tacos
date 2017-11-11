@@ -15,6 +15,7 @@
 		A8717DB61FB71E4C00B36FB2 /* TacosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8717DB51FB71E4C00B36FB2 /* TacosTests.swift */; };
 		A8717DC11FB71E4C00B36FB2 /* TacosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8717DC01FB71E4C00B36FB2 /* TacosUITests.swift */; };
 		A8717DD31FB7223300B36FB2 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8717DD21FB7223300B36FB2 /* File.swift */; };
+		A8717DD61FB7A3B800B36FB2 /* TacoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8717DD51FB7A3B800B36FB2 /* TacoService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		A8717DC01FB71E4C00B36FB2 /* TacosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacosUITests.swift; sourceTree = "<group>"; };
 		A8717DC21FB71E4C00B36FB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8717DD21FB7223300B36FB2 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		A8717DD51FB7A3B800B36FB2 /* TacoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacoService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 		A8717DD41FB7A2C500B36FB2 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				A8717DD51FB7A3B800B36FB2 /* TacoService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8717DD61FB7A3B800B36FB2 /* TacoService.swift in Sources */,
 				A8717DA31FB71E4C00B36FB2 /* ViewController.swift in Sources */,
 				A8717DD31FB7223300B36FB2 /* File.swift in Sources */,
 				A8717DA11FB71E4C00B36FB2 /* AppDelegate.swift in Sources */,
