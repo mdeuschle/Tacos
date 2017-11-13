@@ -36,16 +36,32 @@
                                     <constraint firstAttribute="trailingMargin" secondItem="0Bo-pX-gdj" secondAttribute="trailing" id="cdW-0y-mVR"/>
                                 </constraints>
                             </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vvc-bG-wfA">
+                                <rect key="frame" x="20" y="160" width="335" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QVk-WE-O4l">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="jpg-qu-6kQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1Yg-64-gFI"/>
+                            <constraint firstItem="vvc-bG-wfA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5Pd-tT-Byg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vvc-bG-wfA" secondAttribute="trailing" constant="20" id="DYV-B4-5aj"/>
                             <constraint firstItem="jpg-qu-6kQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KpM-iI-Cg6"/>
                             <constraint firstItem="jpg-qu-6kQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ROT-FO-vhH"/>
+                            <constraint firstItem="vvc-bG-wfA" firstAttribute="top" secondItem="jpg-qu-6kQ" secondAttribute="bottom" constant="20" id="fmB-xC-9Kh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vvc-bG-wfA" secondAttribute="bottom" constant="20" id="hPd-zu-c6A"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="collectionView" destination="vvc-bG-wfA" id="j6p-tj-X3j"/>
                         <outlet property="headerView" destination="jpg-qu-6kQ" id="XnC-AE-yjg"/>
                     </connections>
                 </viewController>
