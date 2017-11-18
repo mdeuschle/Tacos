@@ -19,6 +19,7 @@ class ViewController: UIViewController, DataServiceDelegate {
         super.viewDidLoad()
         tacoService.delegate = self
         tacoService.downloadTacos()
+        tacoService.tacos.shuffle()
         collectionView.delegate = self
         collectionView.dataSource = self
         headerView.addShadow()

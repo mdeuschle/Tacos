@@ -10,6 +10,7 @@
 		A868281D1FB94EA900C049E0 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A868281C1FB94EA900C049E0 /* NibLoadableView.swift */; };
 		A868281F1FB9520800C049E0 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A868281E1FB9520800C049E0 /* ReusableView.swift */; };
 		A86828231FB9583800C049E0 /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86828221FB9583800C049E0 /* UICollectionViewExtension.swift */; };
+		A869231E1FC0C76700A42986 /* MutableCollectionExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A869231D1FC0C76700A42986 /* MutableCollectionExtension.swift */; };
 		A8717DA11FB71E4C00B36FB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8717DA01FB71E4C00B36FB2 /* AppDelegate.swift */; };
 		A8717DA31FB71E4C00B36FB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8717DA21FB71E4C00B36FB2 /* ViewController.swift */; };
 		A8717DA61FB71E4C00B36FB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8717DA41FB71E4C00B36FB2 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		A868281C1FB94EA900C049E0 /* NibLoadableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		A868281E1FB9520800C049E0 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		A86828221FB9583800C049E0 /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
+		A869231D1FC0C76700A42986 /* MutableCollectionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutableCollectionExtension.swift; sourceTree = "<group>"; };
 		A8717D9D1FB71E4C00B36FB2 /* Tacos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tacos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8717DA01FB71E4C00B36FB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8717DA21FB71E4C00B36FB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				A86828221FB9583800C049E0 /* UICollectionViewExtension.swift */,
+				A869231D1FC0C76700A42986 /* MutableCollectionExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A868281F1FB9520800C049E0 /* ReusableView.swift in Sources */,
+				A869231E1FC0C76700A42986 /* MutableCollectionExtension.swift in Sources */,
 				A868281D1FB94EA900C049E0 /* NibLoadableView.swift in Sources */,
 				A8717DDF1FB8D83800B36FB2 /* TacoCell.swift in Sources */,
 				A8717DDA1FB7AC1200B36FB2 /* DropShadow.swift in Sources */,
