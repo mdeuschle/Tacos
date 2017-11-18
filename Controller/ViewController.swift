@@ -42,11 +42,16 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         return tacoService.tacos.count
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        /*
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TacoCell", for: indexPath) as? TacoCell else {
             return TacoCell()
         }
         let taco = tacoService.tacos[indexPath.row]
         cell.config(taco: taco)
+        return cell
+         */
+        let cell = collectionView.dequeResuableCell(for: indexPath) as TacoCell
+        cell.config(taco: tacoService.tacos[indexPath.row])
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
