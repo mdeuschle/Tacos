@@ -32,6 +32,8 @@ class ViewController: UIViewController, DataServiceDelegate {
 
     func tacoDataDownloaded() {
         print("Tacos Downloaded!")
+        // add reload if from web
+//        collectionView.reloadData()
     }
 }
 
@@ -56,7 +58,9 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
+        if let cell = collectionView.cellForItem(at: indexPath) as? TacoCell {
+            cell.shake()
+        }
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 134, height: 134)
