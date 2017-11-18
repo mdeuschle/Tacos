@@ -22,9 +22,11 @@ class ViewController: UIViewController, DataServiceDelegate {
         collectionView.delegate = self
         collectionView.dataSource = self
         headerView.addShadow()
-
-        let nib = UINib(nibName: "TacoCell", bundle: nil)
-        collectionView.register(nib, forCellWithReuseIdentifier: "TacoCell")
+        /*
+         let nib = UINib(nibName: "TacoCell", bundle: nil)
+         collectionView.register(nib, forCellWithReuseIdentifier: "TacoCell")
+         */
+        collectionView.register(TacoCell.self)
     }
 
     func tacoDataDownloaded() {
@@ -51,11 +53,8 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
 
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 95, height: 95)
+        return CGSize(width: 134, height: 134)
     }
-
-    
-
 }
 
 

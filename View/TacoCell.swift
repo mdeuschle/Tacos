@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TacoCell: UICollectionViewCell {
+class TacoCell: UICollectionViewCell, NibLoadableView {
 
     @IBOutlet weak var tacoImageView: UIImageView!
     @IBOutlet weak var tacoNameLabel: UILabel!
